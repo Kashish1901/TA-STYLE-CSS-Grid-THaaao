@@ -1,0 +1,344 @@
+@import "reset";
+@import "var";
+
+html{
+    font-size: 20px
+}
+body{
+    line-height: 1.4;
+}
+.padding{
+    padding: 1rem 1rem;
+}
+.container{
+background-color: yellowgreend;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+grid-auto-rows: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    padding-top: 2rem;
+    padding-bottom: 25rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+.stimulus{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/media/home-img.jpg);
+    grid-column: span 2;
+}
+.hero{
+    background-color: rgb(245,227,215);
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+    grid-column: span 2;
+}
+.nav-bar{
+    padding-top: 2rem;
+   
+}
+.nav-bar a{
+    font-size: 1rem;
+    text-align: center;
+    color: $text-light;
+    padding-right: 1.2rem;
+}
+.nav-bar a:hover{
+    color: $background-yellow;
+}
+.nav-bar .active{
+    color: $background-yellow;
+}
+.content{
+    margin-top: 5rem;
+}
+q{
+    font-size: 1rem;
+    color: $text-light;
+    padding: 5rem 0;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $text-dark;
+}
+strong{
+    font-weight: 800;
+}
+p{
+    color: $text-light;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+.btn-sec{
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+    border: 3px solid $text-dark;
+    font-size: 1rem;
+    margin-top: 2rem;
+    background-color: inherit;
+}
+.mid img{
+    width: 100%;
+    height: 100%;
+}
+.mid{
+    grid-column: span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/media/about-img.jpg);
+}
+.left{
+    grid-column: span 2;
+    padding: 3rem 2rem;
+}
+.right{
+    grid-column: span 1;
+    padding: 3rem 1rem;
+    background-color: $background-yellow;
+    color: white;
+}
+.box-p{
+    width: 20rem;
+    height: .1rem;
+    background-color: white;
+}
+.box-e{
+    width: 90%;
+    height: .1rem;
+    background-color: black;
+}
+.box-f{
+    width: 70%;
+    height: .1rem;
+    background-color: black;
+}
+.box-g{
+    width: 80%;
+    height: .1rem;
+    background-color: black;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+h6{
+    color: $background-org;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.left p{
+    padding: 1rem;
+}
+.right h4{
+    color: black;
+}
+.square-box{
+    
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+.square-box h3{
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: $text-light;
+    font-weight: 100;
+}
+.square-box i{
+    font-size: 2rem;
+    color: white;
+}
+.one h3 , .one p,
+.two h3 , .two p,
+.three h3 , .three p{
+    color: white;
+}
+.one{
+    background-color: $background-yellow;
+   
+}
+.two{
+    background-color: $background-org;
+}
+
+.three{
+    background-color: black;
+}
+.four i{
+    color: black;
+}
+.exp-left img{
+    width: 100%;
+    height: 100%;
+}
+.exp-left{
+    grid-column: span 2;
+}
+.exp-right{
+    background-color: $background-org;
+    color: white;
+    grid-column: span 2;
+    padding: 2rem;
+}
+span{
+    color: black;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    }
+
+.exp-content{
+        color: white;
+        padding: 5rem 1rem;
+       display: grid;
+       justify-items: start;
+       
+    }
+.exp-content i{
+    color: white;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+.exp-content h4{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.exp-content p{
+    color: white;
+}
+.exp-1{
+    padding: 1rem 0;
+}
+.yellow{
+    background-color: $background-yellow;
+}
+.yellow span{
+    color: rgb(140,113,13);
+}
+.orange{
+    background-color: $background-org;
+}
+input{
+    width: 100%;
+    height: 1.3rem;
+    background-color: $background-org;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    font-size: 1.2rem;
+    padding: 1.4rem 0;
+}
+
+textarea{
+    width: 100%;
+    height: 3rem;
+    background-color: $background-org;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    font-size: 1.2rem;
+    padding: 1.4rem 0;
+}
+.btn-pri{
+    border-radius: 2rem;
+    padding: .7rem 4rem;
+    text-align: center;
+    border: 0;
+    color: rgb(180, 179, 179);
+    font-size: .8rem;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.contact img{
+    width: 100%;
+    height: 100%;
+}
+.contact-info{
+    background-color: black;
+    padding: 2rem 2rem;
+    color: white;
+}
+.contact-info li{
+    padding: 1rem 1rem;
+}
+.contact-info i{
+    color: $text-light;
+    padding-right: 1rem;
+}
+.contact-info .active{
+color: $background-yellow;
+}
+.map{
+    grid-column: span 4;
+    text-align: center;
+    padding: 1rem 2rem;
+    padding-bottom: 6rem;
+}
+.map iframe{
+    width: 70%;
+    height: 100%;
+    padding: 4rem 0;
+}
+footer{
+    padding: 4rem 1rem;
+    text-align: center;
+}
+footer h6{
+    color: $text-light;
+}
+footer span{
+    color: $background-yellow;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0;
+    margin-left: 0;
+}
+.footer-nav li{
+    color: $text-light;
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 15px;
+    }
+    .container{
+        background-color: yellowgreend;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-auto-rows: auto;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+}
